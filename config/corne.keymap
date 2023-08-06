@@ -67,4 +67,5 @@
                          &to 0  &trans &kp SPACE     &kp RET &kp BSPC &to 0
                         >;
                 };
+        };
 };
