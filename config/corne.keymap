@@ -34,8 +34,8 @@
 //                    | LY0 |     | SPC |   | ENT |  BSPC  | LY2 |
                         bindings = <
    &kp N0     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7   &kp N8   &kp N9    &kp LT   &kp GT
-   &KP TAB    &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT      &kp CARET &kp AMPS &kp STAR &kp LPAR  &kp RPAR &kp GRAVE
-   &kp LSHFT  &kP MINUS    &kp EQUAL    &KP LBKT     &kp RBKT     &kp BSLH       &kp UNDER &kp PLUS &kp LBRC &kp RBRC  &kp PIPE &kp TILDE
+   &kp TAB    &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT      &kp CARET &kp AMPS &kp STAR &kp LPAR  &kp RPAR &kp GRAVE
+   &kp LSHFT  &kP MINUS    &kp EQUAL    &kp LBKT     &kp RBKT     &kp BSLH       &kp UNDER &kp PLUS &kp LBRC &kp RBRC  &kp PIPE &kp TILDE
                                         &tO 0        &trans       &kp SPACE      &kp RET   &kp BSPC &to 2
                         >;
                 };
