@@ -26,7 +26,7 @@
 //                               | LY0     |  SYS/ESC  | NUMS/SPC |   | NUMS/ENT |  BSPC     | LY1      |
                         bindings = <
    &kp PLUS   &kp Q        &kp W     &kp F         &kp P       &kp B            &kp J           &kp L          &kp U            &kp Y             &kp SEMI          &kp DOUBLE_QUOTES
-   &kp TAB    &mt LSHIFT A &mt ALT R &mt GUI S     &mt LCTRL T &mt HOME G       &mt END M       &mt RCTRL N    &mt RGUI E       &mt RALT I        &mt RSHIFT O      &kp EQUAL
+   &kp TAB    &mt LSHIFT A &mt LALT R &mt LGUI S     &mt LCTRL T &mt HOME G       &mt END M       &mt RCTRL N    &mt RGUI E       &mt RALT I        &mt RSHIFT O      &kp EQUAL
    &kp MINUS  &kp Z        &kp X     &kp C         &kp D       &kp V            &kp K           &kp H          &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp PERIOD        &kp UNDERSCORE
                                      &to DEFAULT   &lt SYS ESC &lt NUMS SPACE   &lt NUMS RET    &kp BSPC &to NUMS
                         >;
