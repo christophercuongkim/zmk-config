@@ -20,15 +20,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | +    |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L    |  U  |  Y  |  ;  |  "   |
-// | TAB  |  A  |  R  |  S  |  T  |  G  |   |  M  |  N    |  E  |  I  |  O  |  =   |
-// | -    |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H    |  [  |  ]  |  .  |  _   |
-//                    | LY0 | ESC | SPC |   | ENT |  BSPC | LY1 |
+// | +    |  Q         |  W      |  F      |  P        |  B       |   |  J       |  L        |  U       |  Y       |  ;         |  "   |
+// | TAB  |  LSHIFT/A  |  ALT/R  |  GUI/S  |  LCTRL/T  |  HOME/G  |   |  END/M   |  RCTRL/N  |  RGUI/E  |  RALT/I  |  RSHIFT/O  |  =   |
+// | -    |  Z         |  X      |  C      |  D        |  V       |   |  K       |  H        |  [       |  ]       |  .         |  _   |
+//                               | LY0     |  SYS/ESC  | NUMS/SPC |   | NUMS/ENT |  BSPC     | LY1      |
                         bindings = <
-   &kp PLUS   &kp Q      &kp W     &kp F         &kp P       &kp B            &kp J           &kp L          &kp U            &kp Y             &kp SEMI   &kp DOUBLE_QUOTES
-   &kp TAB    &mt HOME A &mt ALT R &mt GUI S     &mt LCTRL T &mt END G        &kp M           &mt RCTRL N    &mt RGUI E       &mt RALT I        &kp O      &kp EQUAL
-   &kp MINUS  &kp Z      &kp X     &kp C         &kp D       &kp V            &kp K           &kp H          &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp PERIOD &kp UNDERSCORE
-                          &to DEFAULT   &lt SYS ESC &lt NUMS SPACE   &lt NUMS RET    &kp BSPC &to NUMS
+   &kp PLUS   &kp Q        &kp W     &kp F         &kp P       &kp B            &kp J           &kp L          &kp U            &kp Y             &kp SEMI          &kp DOUBLE_QUOTES
+   &kp TAB    &mt LSHIFT A &mt ALT R &mt GUI S     &mt LCTRL T &mt HOME G       &mt END M       &mt RCTRL N    &mt RGUI E       &mt RALT I        &mt RSHIFT O      &kp EQUAL
+   &kp MINUS  &kp Z        &kp X     &kp C         &kp D       &kp V            &kp K           &kp H          &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp PERIOD        &kp UNDERSCORE
+                                     &to DEFAULT   &lt SYS ESC &lt NUMS SPACE   &lt NUMS RET    &kp BSPC &to NUMS
                         >;
                 };
 
