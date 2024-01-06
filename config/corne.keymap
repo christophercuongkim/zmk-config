@@ -23,6 +23,19 @@
 };
 
 / {
+
+        behaviors {
+                hm: homerow_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <500>;
+                        quick_tap_ms = <200>;
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -34,7 +47,7 @@
 //                               | LY0     |  SYS/ESC  | NUMS/SPC |   | NUMS/ENT |  BSPC     | LY1      |
                         bindings = <
    &kp EQUAL  &kp Q        &kp W      &kp F         &kp P       &kp B            &kp J           &kp L          &kp U            &kp Y             &kp APOS          &kp DOUBLE_QUOTES
-   &kp TAB    &mt LSHIFT A &mt LALT R &mt LGUI S    &mt LCTRL T &mt HOME G       &mt END M       &mt RCTRL N    &mt RGUI E       &mt RALT I        &mt RSHIFT O      &kp COMMA
+   &kp TAB    &hm LSHIFT A &hm LALT R &hm LGUI S    &hm LCTRL T &hm HOME G       &hm END M       &hm RCTRL N    &hm RGUI E       &hm RALT I        &hm RSHIFT O      &kp COMMA
    &kp COLON  &kp Z        &kp X      &kp C         &kp D       &kp V            &kp K           &kp H          &kp LPAR         &kp RPAR          &kp PERIOD        &kp UNDERSCORE
                                       &to DEFAULT   &lt SYS ESC &lt NUMS SPACE   &lt NUMS RET    &kp BSPC &to NUMS
                         >;
