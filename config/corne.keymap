@@ -15,11 +15,11 @@
 #define SYS 4
 
 &mt {
-    tapping-term-ms = <1200>;
+    tapping-term-ms = <2000>;
 };
 
 &lt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <250>;
 };
 
 / {
