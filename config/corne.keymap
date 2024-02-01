@@ -29,10 +29,19 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_MODS";
                         #binding-cells = <2>;
-                        tapping-term-ms = <500>;
+                        tapping-term-ms = <350>;
                         quick_tap_ms = <200>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
+                };
+                gto: gaming_to_layer {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "GAMING_LAYER_TO";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <500>;
+                        quick_tap_ms = <200>;
+                        flavor = "tap-preferred";
+                        bindings = <&to>, <&none>;
                 };
         };
 
@@ -40,6 +49,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        label="typing"
 // -----------------------------------------------------------------------------------------
 // | =    |  Q         |  W      |  F      |  P        |  B       |   |  J       |  L        |  U       |  Y       |  '         |  "   |
 // | TAB  |  LSHIFT/A  |  ALT/R  |  GUI/S  |  LCTRL/T  |  HOME/G  |   |  END/M   |  RCTRL/N  |  RGUI/E  |  RALT/I  |  RSHIFT/O  |  ,   |
@@ -54,6 +64,7 @@
                 };
 
                 num_sym_layer {
+                        label="symbol"
 // -----------------------------------------------------------------------------------------
 // |  0   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7     |  8  |  9   |  "<"  | ">"  |
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &     |  *  |  {   |   }   | `    |
@@ -68,6 +79,7 @@
                 };
 
                 bt_layer {
+                        label="bt"
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  | ALT  |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN  |  UP | RGT |     | F12  |
@@ -82,6 +94,7 @@
                 };
 
                 gaming_layer {
+                        label="gaming"
 // -----------------------------------------------------------------------------------------
 // | TAB     |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U    |  I  |  O  |  P  | BKSP |
 // | CTRL    |  A  |  S  |  D  |  F  |  G  |   |  H  |  J    |  K  |  L  |  ;  |  '   |
@@ -91,11 +104,12 @@
    &kp TAB     &kp Q &kp W &kp E  &kp R  &kp T         &kp Y   &kp U     &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL   &kp A &kp S &kp D  &kp F  &kp G         &kp H   &kp J     &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT   &kp Z &kp X &kp C  &kp V  &kp B         &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH &kp ESC
-         &to DEFAULT  &mt LALT SLCK  &kp SPACE         &kp RET &kp BSPC  &to SYS
+         &gto DEFAULT  &mt LALT SLCK  &kp SPACE         &kp RET &kp BSPC  &to SYS
                         >;
                 };
 
                 sys_layer {
+                        label="sys"
 // -----------------------------------------------------------------------------------------
 // |       |        |        |        |        |        |   |        |  K_UNDO  |  K_COPY  |  K_PASTE  |  K_CUT  | K_REDO |
 // |  TAB  |  HOME  |  ALT   |  GUI   |  CTRL  |  END   |   |        |  LEFT    |  DOWN    |  UP       |  RIGHT  |        |
