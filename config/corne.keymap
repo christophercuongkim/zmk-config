@@ -51,14 +51,14 @@
                 default_layer {
                         label="typing";
 // -----------------------------------------------------------------------------------------
-// | =    |  Q         |  W      |  F      |  P        |  B       |   |  J       |  L        |  U       |  Y       |  '         |  "   |
-// | TAB  |  LSHIFT/A  |  ALT/R  |  GUI/S  |  LCTRL/T  |  HOME/G  |   |  END/M   |  RCTRL/N  |  RGUI/E  |  RALT/I  |  RSHIFT/O  |  ,   |
-// | :    |  Z         |  X      |  C      |  D        |  V       |   |  K       |  H        |  (       |  )       |  .         |  _   |
+// | =    |  Q         |  W      |  E      |  R        |  T       |   |  Y       |  U        |  I       |  O       |  P         |  "   |
+// | TAB  |  LSHIFT/A  |  ALT/S  |  GUI/D  |  LCTRL/F  |  HOME/G  |   |  END/H   |  RCTRL/J  |  RGUI/K  |  RALT/L  |  RSHIFT/'  |  ,   |
+// | :    |  Z         |  X      |  C      |  V        |  B       |   |  N       |  M        |  (       |  )       |  .         |  _   |
 //                               | LY0     |  SYS/ESC  | NUMS/SPC |   | NUMS/ENT |  BSPC     | LY1      |
                         bindings = <
-   &kp EQUAL  &kp Q        &kp W      &kp F         &kp P       &kp B            &kp J           &kp L          &kp U            &kp Y             &kp APOS          &kp DOUBLE_QUOTES
-   &kp TAB    &hm LSHIFT A &hm LALT R &hm LGUI S    &hm LCTRL T &hm HOME G       &hm END M       &hm RCTRL N    &hm RGUI E       &hm RALT I        &hm RSHIFT O      &kp COMMA
-   &kp COLON  &kp Z        &kp X      &kp C         &kp D       &kp V            &kp K           &kp H          &kp LPAR         &kp RPAR          &kp PERIOD        &kp UNDERSCORE
+   &kp EQUAL  &kp Q        &kp W      &kp E         &kp R       &kp T            &kp Y           &kp U          &kp I            &kp O             &kp P                &kp DOUBLE_QUOTES
+   &kp TAB    &hm LSHIFT A &hm LALT S &hm LGUI D    &hm LCTRL F &hm HOME G       &hm END H       &hm RCTRL J    &hm RGUI K       &hm RALT L        &hm RSHIFT APOS      &kp COMMA
+   &kp COLON  &kp Z        &kp X      &kp C         &kp V       &kp B            &kp N           &kp M          &kp LPAR         &kp RPAR          &kp PERIOD           &kp UNDERSCORE
                                       &to DEFAULT   &lt SYS ESC &lt NUMS SPACE   &lt NUMS RET    &kp BSPC &to NUMS
                         >;
                 };
