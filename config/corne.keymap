@@ -113,13 +113,14 @@
 // -----------------------------------------------------------------------------------------
 // |       |        |        |        |        |        |   |        |  K_UNDO  |  K_COPY  |  K_PASTE  |  K_CUT  | K_REDO |
 // |  TAB  |  HOME  |  ALT   |  GUI   |  CTRL  |  END   |   |        |  LEFT    |  DOWN    |  UP       |  RIGHT  |        |
+// |  TAB  |  HOME  |  ALT   |  GUI   |  CTRL  |  END   |   |  LEFT  |  DOWN    |  UP      |  RIGHT    |         |        |
 // |       |        |        |        |        |        |   |        |          |          |           |         |        |
 //                    | LY0 |     | SPC |   | ENT | BSPC  | LY0 |
                         bindings = <
-   &none     &none    &none    &none        &none      &none         &none   &kp K_UNDO &kp K_COPY &kp K_PASTE &kp K_CUT &kp K_REDO
-   &kp TAB   &kp HOME &kp LALT &kp LGUI     &kp LCTRL  &kp END       &none   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT &none
-   &none     &none    &none    &none        &none      &none         &none   &none      &none      &none       &none     &none
-                               &to DEFAULT  &none      &kp SPACE     &kp RET &kp BSPC   &to DEFAULT
+   &none     &none    &none    &none        &none      &none         &none      &kp K_UNDO &kp K_COPY &kp K_PASTE &kp K_CUT &kp K_REDO
+   &kp TAB   &kp HOME &kp LALT &kp LGUI     &kp LCTRL  &kp END       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &none     &none
+   &none     &none    &none    &none        &none      &none         &none      &none      &none      &none       &none     &none
+                               &to DEFAULT  &none      &kp SPACE     &kp RET    &kp BSPC   &to DEFAULT
                         >;
                 };
 
